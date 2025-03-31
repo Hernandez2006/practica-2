@@ -1,0 +1,256 @@
+:root{
+ --color-principal: salmon;
+ --color-secundario:  rgb(197, 106, 96);
+ --tercer-color: greenyellow;
+ --cuarto-color: black;
+ --quinto-color: orange;
+ --sexto-color: pink;
+}
+body{
+    background-color: var(--color-principal);
+}
+.titulo{
+     font-family: century;
+     text-align: center;
+}
+.enlaces{
+   background-color: var(--color-secundario);
+    text-align: center;
+    padding: 10px;
+}
+/* menu */
+.enlace1:hover{
+   color: var(--tercer-color);
+}
+.enlace1{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+body.tienda .enlace1.tienda{
+    color: var(--tercer-color);
+}
+body.noso .enlace1.noso{
+    color: var(--tercer-color);
+}
+.subtitulo{
+    font-family: century;
+    text-align: center;
+}
+.producto{
+    font-family: century;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.contenedor2{
+    background-color: var(--color-secundario);
+}
+.cont{
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-family: century;
+}
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont_img{
+    text-align: center;
+}
+.imagen{
+    width: 80%;
+   margin: 20px;
+
+}
+.parrafo{
+    font-family: Century;
+    color: var(--cuarto-color);
+}
+.precio{
+   color: aqua;
+}
+/* estilos pagina 2 */
+.nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.razones{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+.i_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imag{
+    width: 30%;
+   justify-content: center;
+   background-color: transparent;
+}
+.razon{
+    text-align: center;
+
+}
+/* estilos de la pagina 3 */
+.cono{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.texto{
+    text-align: justify;
+}
+.tamaños{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-bottom: 10px;
+}
+.for{
+    background-color: var(--color-principal);
+    width: 95.5%;
+}
+.select{
+    width: 95.5%;
+    background-color: var(--color-principal);
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bot{
+    width: 100%;
+    background-color: greenyellow;
+}
+.derechos{
+    background-color: var(--color-secundario);
+    text-align: center;
+    padding: 10px;
+}
+/* media queries de un celular */
+@media (min-width: 360px) and (max-width:640px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+    .for{
+        width: 100%;
+    }
+    .select{
+        width: 97.5%;
+    }
+    .cuadro{
+        padding-bottom: 10px;
+    }
+    /* pagina 2 */
+    .nosotros{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .razones{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* pagina 3 */
+    .cono{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .tamaños{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-bottom: 5px;
+    }
+}
+/* media queries de una tablet */
+@media (min-width:641px) and (max-width:900px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .for{
+        width: 100%;
+    }
+    .select{
+        width: 97.5%;
+    }
+    .cuadro{
+        padding-bottom: 10px;
+    }
+    /* pagina 2 */
+    .nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .cont_img{
+        text-align: center;
+    }
+    .razones{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* pagina 3 */
+    .cono{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .tamaños{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding-bottom: 5px;
+    }
+}
+/* media queries de una laptop */
+@media (min-width: 901px) and (max-width:1180px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    .for{
+        width: 100%;
+    }
+    .select{
+        width: 97.5%;
+    }
+    .cuadro{
+        padding-bottom: 10px;
+    }
+    /* pagina 2 */
+    .nosotros{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .razones{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    /* pagina 3 */
+    .cono{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .tamaños{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding-bottom: 5px;
+    }
+}
+
+
+
